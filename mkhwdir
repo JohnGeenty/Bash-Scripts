@@ -1,0 +1,10 @@
+#! /bin/bash
+	
+	echo Which number homework is it?
+	read hwNum
+	
+	cwd=$(pwd)
+	
+	cd ~/Desktop/cs220/Homework
+	mkdir -p hw$hwNum/{src,src/main,src/test,src/main/scala,src/test/scala}
+	cd $cwd

@@ -1,0 +1,13 @@
+#! /bin/bash
+
+ cd ~/Desktop/cs220/Homework/
+
+        echo "Which Homework would you like to access?"
+
+        read directory
+        if [ -d $directory ]; then
+		cd $directory 
+		sbt
+	else
+		echo "That homework doesn't exist, try again"
+	fi
